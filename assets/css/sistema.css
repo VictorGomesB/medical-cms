@@ -1,0 +1,816 @@
+@import url("https://fonts.googleapis.com/css?family=Pontano+Sans");
+@import url("https://fonts.googleapis.com/css?family=Ropa+Sans");
+
+.container-full {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-25 {
+    width: 25vw;
+    float: left;
+    height: 100%;
+}
+
+.container-20 {
+    width: 20vw;
+    float: left;
+    height: 100%;
+}
+
+.container-15 {
+    width: 15vw;
+    float: left;
+    height: 100%;
+}
+
+.container-75 {
+    width: 75vw;
+    float: left;
+    height: 100%;
+}
+
+.container-80 {
+    width: 80vw;
+    float: left;
+    height: 100%;
+}
+
+.block {
+    padding: 0 5%;
+    height: 100vh;
+    width: 80vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.form_cadastro {
+    padding: 5%;
+    height: 100%;
+}
+
+.form_cadastro label {
+    font-weight: bold;
+}
+
+.form_cadastro input[type="text"] {
+    padding: 1%;
+}
+
+.form_cadastro input[type="submit"] {
+    font-size: 20px;
+}
+
+.form_cadastro ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.feedback_form_cadastro span {
+    margin: 1% 0;
+    float: left;
+}
+
+.form_block {
+    margin: 5% 0;
+}
+
+.header_form {
+    padding: 4% 0;
+    font-size: 24px;
+    min-height: 30vh;
+}
+
+.header_form input {
+    margin-left: 1%;
+}
+
+.header_form button {
+    float: right;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.resultado th {
+    border-bottom: 1px solid #dddddd;
+}
+
+.resultado td,
+th {
+    text-align: left;
+    padding: 1%;
+    overflow: hidden;
+}
+
+.resultado td .btn_edit,
+.btn_delete {
+    font-size: 20px;
+    margin-right: 4%;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    display: block;
+    float: left;
+}
+
+.resultado td .btn_edit:hover,
+.btn_delete:hover {
+    opacity: 0.8;
+    background-color: transparent;
+}
+
+.btn_delete {
+    background: url("../imgs/icon.svg") no-repeat center;
+    /*background-color: transparent;*/
+    border: none;
+    background-size: 100%;
+}
+.btn_edit {
+    background: url("../imgs/pencil.svg") no-repeat center;
+    background-color: transparent;
+    border: none;
+    background-size: 100%;
+}
+
+.btn_open {
+    display: none;
+}
+
+.resultado tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+.wrap_resultado {
+    height: 55vh;
+}
+
+.btn_submit {
+    float: right;
+    background-color: #a268a7;
+    padding: 1%;
+    border: none;
+    color: white;
+}
+
+.btn_submit:hover {
+    background-color: #925d96;
+}
+
+.titulo {
+    margin-bottom: 3%;
+    font-family: "Ropa Sans", sans-serif;
+    font-weight: bold;
+}
+
+.small_input {
+    width: 10%;
+}
+
+.full_input {
+    width: 100%;
+}
+
+.input_login {
+    width: 18vw;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0.5% auto;
+    background-color: white;
+    color: #999;
+}
+
+.input_login svg {
+    margin-left: 5%;
+}
+
+.input_login input {
+    height: 100%;
+    border: none;
+    padding: 5% 5%;
+    color: #999;
+}
+
+.button_login {
+    display: block;
+    width: 18vw;
+    margin: 1% auto;
+    border-radius: 5px;
+}
+
+.wrap_menu_form {
+    padding: 1% 0;
+    background-color: #f3f3f3;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+}
+
+#btn_esqueci_senha {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    color: #999;
+}
+
+#btn_esqueci_senha:hover {
+    color: #f5f5f5;
+    background-color: #ccc;
+}
+
+#menu_lateral {
+    background: url("../imgs/bg.png") center no-repeat,
+        linear-gradient(to left, #e3e3e3, #fff);
+    box-shadow: 0px 0px 2px 2px #b3b3b3;
+}
+
+#menu_lateral ul {
+    list-style: none;
+    height: 58vh;
+    padding: 0;
+    margin: 0;
+}
+
+#menu_lateral li {
+    color: #3a3a3a;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5%;
+    font-family: "Ropa Sans", sans-serif;
+    -webkit-transition: border-bottom 0.2s; /* Safari */
+    transition: border-left 0.2s;
+}
+
+#menu_lateral li:hover {
+    border-left: 0.8vw solid #9c6e9f;
+}
+
+#menu_lateral .active {
+    border-left: 0.8vw solid #9c6e9f;
+}
+
+#painel {
+    display: none;
+}
+
+#login {
+    background-color: #ededed;
+    background: url("../imgs/bg.png") no-repeat, linear-gradient(#e3e3e3, #fff);
+    background-position: center;
+    background-size: 300%;
+    font-family: arial;
+    font-size: 0.9em;
+}
+
+#wrap_login {
+    margin: 5% 0;
+    display: none;
+}
+
+#logo {
+    width: 40%;
+    display: block;
+    margin: 10% auto 15% auto;
+}
+
+#logo_login {
+    display: block;
+    margin: auto;
+    width: 20vmax;
+    padding-top: 20vmax;
+}
+
+.mobile_disclaimer {
+    font-size: 2.4vmax;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 10vmax;
+    font-weight: 600;
+}
+
+#painel {
+    overflow: hidden;
+}
+
+#assinatura {
+    font-size: 10px;
+    text-align: center;
+    color: #999;
+    position: relative;
+    bottom: 1%;
+}
+
+#form_novo_unidade input {
+    margin: 1% 0;
+}
+
+#form_edt_unidade label {
+    margin-top: 2%;
+}
+
+#form_edt_unidade input {
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+#form_novo_exame h3 {
+    margin: 0;
+}
+
+#form_novo_exame h4 {
+    font-size: 16px;
+    color: #ac76b0;
+}
+
+#form_novo_exame .wrap_title {
+    margin-bottom: 3%;
+}
+
+#form_novo_exame ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+    background-color: #9c6e9f;
+    color: white;
+    border: none;
+    padding: 0.5% 1%;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #925d96;
+}
+
+body {
+    overflow: hidden;
+    font-family: "Pontano Sans", sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Custom Scroll Bar*/
+
+::-webkit-scrollbar {
+    width: 0.6vw;
+    height: 0.6vh;
+}
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+::-webkit-scrollbar-thumb {
+    background: #cecece;
+    /*border: 0px none #ffffff;*/
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #9c6e9f;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+    /*border: 0px none #111;*/
+    border-radius: 0px;
+}
+
+/* Departamento Pessoal */
+
+#curriculos select {
+    font-size: 1.5vw;
+    padding: 0.5%;
+    margin: 1% 2%;
+    font-family: "Pontano Sans", sans-serif;
+}
+
+#curriculos .calendar {
+    font-size: 1.5vw;
+    padding: 0.5%;
+    margin: 1% 2% 1% 0.5%;
+    font-family: "Pontano Sans", sans-serif;
+    width: 10vw;
+    text-align: center;
+}
+
+#curriculos label {
+    font-size: 1.5vw;
+    color: #ababab;
+}
+
+#curriculos .wrap_menu_form h3 {
+    margin-left: 2%;
+    color: #ababab;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .container-full {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container-25 {
+        width: 25vw;
+        float: left;
+        height: 100%;
+    }
+
+    .container-20 {
+        width: 20vw;
+        float: left;
+        height: 100%;
+    }
+
+    .container-15 {
+        width: 15vw;
+        float: left;
+        height: 100%;
+    }
+
+    .container-75 {
+        width: 75vw;
+        float: left;
+        height: 100%;
+    }
+
+    .container-80 {
+        width: 80vw;
+        float: left;
+        height: 100%;
+    }
+
+    .block {
+        padding: 0 5%;
+        height: 100vh;
+        width: 80vw;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .form_cadastro {
+        padding: 5%;
+        height: 100%;
+    }
+
+    .form_cadastro label {
+        font-weight: bold;
+    }
+
+    .form_cadastro input[type="text"] {
+        padding: 1%;
+    }
+
+    .form_cadastro input[type="submit"] {
+        font-size: 20px;
+    }
+
+    .form_cadastro ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .feedback_form_cadastro span {
+        margin: 1% 0;
+        float: left;
+    }
+
+    .form_block {
+        margin: 5% 0;
+    }
+
+    .header_form {
+        padding: 4% 0;
+        font-size: 24px;
+        min-height: 30vh;
+    }
+
+    .header_form input {
+        margin-left: 1%;
+    }
+
+    .header_form button {
+        float: right;
+    }
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .resultado th {
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .resultado td,
+    th {
+        text-align: left;
+        padding: 1%;
+        overflow: hidden;
+    }
+
+    .resultado td .btn_edit,
+    .btn_delete {
+        font-size: 20px;
+        margin-right: 4%;
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+        display: block;
+        float: left;
+    }
+
+    .resultado td .btn_edit:hover,
+    .btn_delete:hover {
+        opacity: 0.8;
+        background-color: transparent;
+    }
+
+    .btn_delete {
+        background: url("../imgs/icon.svg") no-repeat center;
+        /*background-color: transparent;*/
+        border: none;
+        background-size: 100%;
+    }
+    .btn_edit {
+        background: url("../imgs/pencil.svg") no-repeat center;
+        background-color: transparent;
+        border: none;
+        background-size: 100%;
+    }
+
+    .btn_open {
+        display: none;
+    }
+
+    .resultado tr:nth-child(even) {
+        background-color: #f1f1f1;
+    }
+
+    .wrap_resultado {
+        height: 55vh;
+    }
+
+    .btn_submit {
+        float: right;
+        background-color: #a268a7;
+        padding: 1%;
+        border: none;
+        color: white;
+    }
+
+    .btn_submit:hover {
+        background-color: #925d96;
+    }
+
+    .titulo {
+        margin-bottom: 3%;
+        font-family: "Ropa Sans", sans-serif;
+        font-weight: bold;
+    }
+
+    .small_input {
+        width: 10%;
+    }
+
+    .full_input {
+        width: 100%;
+    }
+
+    .input_login {
+        width: 18vw;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin: 0.5% auto;
+        background-color: white;
+        color: #999;
+    }
+
+    .input_login svg {
+        margin-left: 5%;
+    }
+
+    .input_login input {
+        height: 100%;
+        border: none;
+        padding: 5% 5%;
+        color: #999;
+    }
+
+    .button_login {
+        display: block;
+        width: 18vw;
+        margin: 1% auto;
+        border-radius: 5px;
+    }
+
+    .wrap_menu_form {
+        padding: 1% 0;
+        background-color: #f3f3f3;
+        border: 1px solid #eaeaea;
+        border-radius: 10px;
+    }
+
+    #btn_esqueci_senha {
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        color: #999;
+    }
+
+    #btn_esqueci_senha:hover {
+        color: #f5f5f5;
+        background-color: #ccc;
+    }
+
+    #menu_lateral {
+        background: url("../imgs/bg.png") center no-repeat,
+            linear-gradient(to left, #e3e3e3, #fff);
+        box-shadow: 0px 0px 2px 2px #b3b3b3;
+    }
+
+    #menu_lateral ul {
+        list-style: none;
+        height: 58vh;
+        padding: 0;
+        margin: 0;
+    }
+
+    #menu_lateral li {
+        color: #3a3a3a;
+        cursor: pointer;
+        font-size: 18px;
+        padding: 5%;
+        font-family: "Ropa Sans", sans-serif;
+        -webkit-transition: border-bottom 0.2s; /* Safari */
+        transition: border-left 0.2s;
+    }
+
+    #menu_lateral li:hover {
+        border-left: 0.8vw solid #9c6e9f;
+    }
+
+    #menu_lateral .active {
+        border-left: 0.8vw solid #9c6e9f;
+    }
+
+    #painel {
+        display: none;
+    }
+
+    #login {
+        background-color: #ededed;
+        background: url("../imgs/bg.png") 50% -5%/60% no-repeat,
+            linear-gradient(#e3e3e3, #fff);
+        font-family: arial;
+        font-size: 0.9em;
+    }
+
+    #wrap_login {
+        margin: 5% 0;
+        display: block;
+    }
+
+    #logo {
+        width: 40%;
+        display: block;
+        margin: 10% auto 15% auto;
+    }
+
+    #logo_login {
+        display: block;
+        margin: auto;
+        width: 10vw;
+        padding-top: 5%;
+    }
+
+    .mobile_disclaimer {
+        display: none;
+    }
+    #painel {
+        overflow: hidden;
+    }
+
+    #assinatura {
+        font-size: 10px;
+        text-align: center;
+        color: #999;
+        position: relative;
+        bottom: 1%;
+    }
+
+    #form_novo_unidade input {
+        margin: 1% 0;
+    }
+
+    #form_edt_unidade label {
+        margin-top: 2%;
+    }
+
+    #form_edt_unidade input {
+        font-weight: bold;
+        text-rendering: optimizeLegibility;
+    }
+
+    #form_novo_exame h3 {
+        margin: 0;
+    }
+
+    #form_novo_exame h4 {
+        font-size: 16px;
+        color: #ac76b0;
+    }
+
+    #form_novo_exame .wrap_title {
+        margin-bottom: 3%;
+    }
+
+    #form_novo_exame ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    button {
+        cursor: pointer;
+        background-color: #9c6e9f;
+        color: white;
+        border: none;
+        padding: 0.5% 1%;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        background-color: #925d96;
+    }
+
+    body {
+        overflow: hidden;
+        font-family: "Pontano Sans", sans-serif;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    /* Custom Scroll Bar*/
+
+    ::-webkit-scrollbar {
+        width: 0.6vw;
+        height: 0.6vh;
+    }
+    ::-webkit-scrollbar-button {
+        width: 0px;
+        height: 0px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #cecece;
+        /*border: 0px none #ffffff;*/
+        border-radius: 50px;
+    }
+
+    ::-webkit-scrollbar-thumb:active {
+        background: #9c6e9f;
+    }
+    ::-webkit-scrollbar-track {
+        background: transparent;
+        /*border: 0px none #111;*/
+        border-radius: 0px;
+    }
+
+    /* Departamento Pessoal */
+
+    #curriculos select {
+        font-size: 1.5vw;
+        padding: 0.5%;
+        margin: 1% 2%;
+        font-family: "Pontano Sans", sans-serif;
+    }
+
+    #curriculos .calendar {
+        font-size: 1.5vw;
+        padding: 0.5%;
+        margin: 1% 2% 1% 0.5%;
+        font-family: "Pontano Sans", sans-serif;
+        width: 10vw;
+        text-align: center;
+    }
+
+    #curriculos label {
+        font-size: 1.5vw;
+        color: #ababab;
+    }
+
+    #curriculos .wrap_menu_form h3 {
+        margin-left: 2%;
+        color: #ababab;
+    }
+}
